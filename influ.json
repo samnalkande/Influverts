@@ -1,0 +1,16 @@
+{
+    "params":
+    {
+      "local_server":"True",
+      "local_uri": "mysql://root:@localhost/influverts",
+      "prod_uri":"mysql://root:@localhost/influverts",
+      "in_url":"https://instagram.com/influverts",
+      "tw_url":"https://twitter.com/influverts",
+      "ld_url": "https://linkedin.com/Influverts",
+      "gmail-user":"sasmitnalkande999@gmail.com",
+      "gmail-password":"etdrzkgzjmztpstb",
+      "no_of_posts": 3
+     
+    }
+  }
+  
