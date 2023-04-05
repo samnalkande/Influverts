@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Influverts</title>
+     <style>
+    img .logo {
+        position: relative;
+        top: 5;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+      }
+
+    .logo {
+        position: relative;
+        top: 5;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .button-re{
+      margin: 30 10px;
+      font-size: 16px;
+      border-radius: 50px;
+      border: none;
+      background-color: #5072A7;
+      color: #fff;
+      cursor: pointer;
+      padding: 25px;
+    }
+
+    button {
+      margin: 30 10px;
+      font-size: 16px;
+      border-radius: 50px;
+      border: none;
+      background-color: #5072A7;
+      color: #fff;
+      cursor: pointer;
+      padding: 25px;
+    }
+
+    button:hover {
+      background-color: #72A0C1;
+    }
+
+    .footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    /* Style for the social media icons */
+    .footer a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 20px;
+    }
+
+    .footer a:hover {
+      color: #0077b5;
+    }
+
+    /* Style for the Facebook icon */
+
+    .fa-instagram {
+      background: #3B5998;
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    /* Style for the Twitter icon */
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    /* Style for the LinkedIn icon */
+    .fa-linkedin {
+      background: #0077B5;
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+     h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 36px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      /* CSS styling for subheading */
+      h4 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+       h5 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+      
+      /* CSS styling for content */
+      p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+ .contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #fff;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #fdc134;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #fff7e5;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  background: #fff;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input::focus,
+.contact .php-email-form textarea::focus {
+  background-color: #fdc134;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #5072A7;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #72A0C1;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pricing .row {
+  padding-top: 40px;
+}
+
+.pricing .box {
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  background: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.pricing .featured-badge {
+  display: inline-block;
+  position: absolute;
+  top: -11px;
+  left: calc(50% - 49px);
+  background: #5072A7;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50px;
+  padding: 4px 20px 5px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.pricing h3 {
+  font-weight: 300;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.pricing h4 {
+  font-size: 46px;
+  color: #5072A7;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 25px;
+}
+
+.pricing h4 span {
+  color: #bababa;
+  font-size: 18px;
+  display: block;
+}
+
+.pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #999;
+  text-align: left;
+  line-height: 20px;
+}
+
+.pricing ul li {
+  padding-bottom: 12px;
+}
+
+.pricing ul i {
+  color: #5072A7;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+}
+
+.pricing ul .na i {
+  color: #ccc;
+}
+
+.pricing ul .na span {
+  text-decoration: line-through;
+}
+
+.pricing .get-started-btn {
+  background: #5072A7;
+  display: inline-block;
+  padding: 6px 30px;
+  border-radius: 20px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  transition: 0.3s;
+}
+
+.pricing .get-started-btn:hover {
+  background: #72A0C1;
+}
+
+.pricing .featured {
+  z-index: 10;
+  margin: -30px -5px 0 -5px;
+  border: 1px solid #72A0C1;
+}
+
+.pricing .featured .get-started-btn {
+  background: #5072A7;
+}
+
+.pricing .featured .get-started-btn:hover {
+  background: #72A0C1;
+}
+
+@media (max-width: 992px) {
+  .pricing .box {
+    max-width: 60%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing .box {
+    max-width: 80%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .pricing .box {
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+.features .content+.content {
+  margin-top: 100px;
+}
+
+.features .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #213b52;
+}
+
+.features .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features .content ul li {
+  padding-bottom: 10px;
+}
+
+.features .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #fdc134;
+}
+
+.features .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+  </style>
+
+    <!-- Bootstrap core CSS -->
+    <script src="https://kit.fontawesome.com/01ae2b8811.js" crossorigin="anonymous"></script>
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/clean-blog.min.css') }}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <img class="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="My Logo">
+        <a class="navbar-brand" href="">Influverts</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+             <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#HowItWorks">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </div>
+      </div>
+    </nav>
+
+<br>
+
+    <!-- Page Header -->
+    {% set fname = 'img/' + post.img_file %}
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename=fname) }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+              <h1>{{post.title}}</h1>
+              <div class="col-lg-8 col-md-10 mx-auto">
+              
+              <h5 class="meta">Posted by
+                <a href="#">Influverts</a>
+                on {{post.date}}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <p>{{post.content}}</p>
+            <p>{{post.content2}}</p>
+            <p>{{post.content3}}</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  
+<br>
+
+ <footer class="footer">
+      
+
+            <!-- Social media icons -->
+            <h5>Our Social Networks</h5>
+            <hr>
+            <a href="{{params['in_url']}}" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="{{params['tw_url']}}" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="{{params['ld_url']}}" target="_blank"><i class="fa fa-linkedin"></i></a>
+        
+            <p class="copyright text-muted">Copyright © Influverts 2023</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+  </body>
+
+</html>

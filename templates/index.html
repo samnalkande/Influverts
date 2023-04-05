@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Influverts</title>
+     <style>
+    img .logo {
+        position: relative;
+        top: 5;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+      }
+
+    .logo {
+        position: relative;
+        top: 5;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .button-re{
+      margin: 30 10px;
+      font-size: 16px;
+      border-radius: 50px;
+      border: none;
+      background-color: #5072A7;
+      color: #fff;
+      cursor: pointer;
+      padding: 25px;
+    }
+
+    button {
+      margin: 30 10px;
+      font-size: 16px;
+      border-radius: 50px;
+      border: none;
+      background-color: #5072A7;
+      color: #fff;
+      cursor: pointer;
+      padding: 25px;
+    }
+
+    button:hover {
+      background-color: #72A0C1;
+    }
+
+    .footer {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    /* Style for the social media icons */
+    .footer a {
+      color: #333;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 20px;
+    }
+
+    .footer a:hover {
+      color: #0077b5;
+    }
+
+    /* Style for the Facebook icon */
+
+    .fa-instagram {
+      background: #3B5998;
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    /* Style for the Twitter icon */
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    /* Style for the LinkedIn icon */
+    .fa-linkedin {
+      background: #0077B5;
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+     h1 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 36px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 36px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      /* CSS styling for subheading */
+      h4 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+      
+      /* CSS styling for content */
+      p {
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+
+ .contact .info-box {
+  color: #444444;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #fff;
+}
+
+.contact .info-box i {
+  font-size: 32px;
+  color: #fdc134;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #fff7e5;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  background: #fff;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input::focus,
+.contact .php-email-form textarea::focus {
+  background-color: #fdc134;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #5072A7;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #72A0C1;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pricing .row {
+  padding-top: 40px;
+}
+
+.pricing .box {
+  padding: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  background: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.pricing .featured-badge {
+  display: inline-block;
+  position: absolute;
+  top: -11px;
+  left: calc(50% - 49px);
+  background: #5072A7;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50px;
+  padding: 4px 20px 5px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.pricing h3 {
+  font-weight: 300;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.pricing h4 {
+  font-size: 46px;
+  color: #5072A7;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 25px;
+}
+
+.pricing h4 span {
+  color: #bababa;
+  font-size: 18px;
+  display: block;
+}
+
+.pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #999;
+  text-align: left;
+  line-height: 20px;
+}
+
+.pricing ul li {
+  padding-bottom: 12px;
+}
+
+.pricing ul i {
+  color: #5072A7;
+  font-size: 18px;
+  padding-right: 4px;
+}
+
+.pricing ul .na {
+  color: #ccc;
+}
+
+.pricing ul .na i {
+  color: #ccc;
+}
+
+.pricing ul .na span {
+  text-decoration: line-through;
+}
+
+.pricing .get-started-btn {
+  background: #5072A7;
+  display: inline-block;
+  padding: 6px 30px;
+  border-radius: 20px;
+  color: #fff;
+  transition: none;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  transition: 0.3s;
+}
+
+.pricing .get-started-btn:hover {
+  background: #72A0C1;
+}
+
+.pricing .featured {
+  z-index: 10;
+  margin: -30px -5px 0 -5px;
+  border: 1px solid #72A0C1;
+}
+
+.pricing .featured .get-started-btn {
+  background: #5072A7;
+}
+
+.pricing .featured .get-started-btn:hover {
+  background: #72A0C1;
+}
+
+@media (max-width: 992px) {
+  .pricing .box {
+    max-width: 60%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing .box {
+    max-width: 80%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .pricing .box {
+    max-width: 100%;
+    margin: 0 auto 30px auto;
+  }
+}
+
+.features .content+.content {
+  margin-top: 100px;
+}
+
+.features .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #213b52;
+}
+
+.features .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features .content ul li {
+  padding-bottom: 10px;
+}
+
+.features .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #fdc134;
+}
+
+.features .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+  </style>
+
+    <!-- Bootstrap core CSS -->
+    <script src="https://kit.fontawesome.com/c6313ca099.js" crossorigin="anonymous"></script>
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template --><link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/clean-blog.min.css') }}" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <img class="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="My Logo">
+        <a class="navbar-brand" href="">Influverts</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+             <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#HowItWorks">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </div>
+      </div>
+    </nav>
+
+
+<!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/INFLUVERTS.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Influverts</h1>
+              <span class="subheading">Social Media Marketing Agency</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+<br>
+
+
+
+
+<section id="HowItWorks" class="features section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h1>How It Works</h1>
+          <div class="col-lg-8 col-md-10 mx-auto">
+          <p data-aos="fade-in" class="aos-init aos-animate">Initial Consultation Our social media marketing team will schedule an initial consultation with you to discuss your business goals, target audience, and social media marketing objectives. This consultation will help us understand your business and create a customized social media marketing plan that meets your needs.</p>
+        </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 aos-init aos-animate" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='img/features-1.png') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-4 aos-init aos-animate" data-aos="fade-left">
+            <h3>Strategy Development Based on the information gathered during the initial consultation</h3>
+            <p class="fst-italic">
+               We will develop a comprehensive social media marketing strategy tailored to your business. This strategy will outline the types of content we will create, the platforms we will use, and the tactics we will employ to engage with your target audience.
+            </p>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-2 aos-init aos-animate" data-aos="fade-left">
+            <img src="{{ url_for('static', filename='img/features-2.png') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1 aos-init aos-animate" data-aos="fade-right">
+            <h3>Content Creation</h3>
+            <p class="fst-italic">
+              Our team of social media experts will create high-quality content that resonates with your target audience. We will design images and videos, write copy and captions, and develop engaging content that encourages your followers to like, comment, and share.
+            </p>
+            <p>
+              Platform Management We will manage your social media accounts and post content on your behalf. Our team will monitor your accounts, respond to comments and messages, and engage with your followers to build a strong online community.
+            </p>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 aos-init aos-animate" data-aos="fade-right">
+            <img src="{{ url_for('static', filename='img/features-3.png') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 aos-init aos-animate" data-aos="fade-left">
+            <h3>Performance Tracking</h3>
+            <p> We will regularly track and analyze the performance of
+             your social media marketing campaigns.</p>
+              <p class="fst-italic">
+               This will help us identify what's working and what's not,
+                and make adjustments to improve your results.
+            </p>
+          </div>
+        </div>
+
+        <div class="row content">
+          <div class="col-md-5 order-1 order-md-2 aos-init aos-animate" data-aos="fade-left">
+            <img src="{{ url_for('static', filename='img/features-4.png') }}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1 aos-init aos-animate" data-aos="fade-right">
+            <h3>Ongoing Optimization</h3>
+            <p class="fst-italic">
+              We will continually optimize your social media marketing strategy to ensure that it aligns with your business goals and delivers results.
+            </p>
+            <p>
+              Our team will stay up-to-date with the latest trends and best practices to ensure that your social media marketing campaigns are always effective.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  
+<br>
+<br>
+<hr>
+<br>
+
+ <section id="pricing" class="pricing section-bg">
+      <div class="container">
+           <div class="section-title">
+          <h1>Pricing</h1>
+          <div class="col-lg-8 col-md-10 mx-auto">
+          <p data-aos="fade-in">At Influverts, we understand the importance of effective social media marketing for your business. That's why we offer customized social media marketing services at affordable prices.</p>
+          <p data-aos="fade-in">Our pricing model is based on your specific needs and budget. We will work with you to create a social media marketing plan that aligns with your business goals and budget constraints.</p>
+          </div>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-4 box" data-aos="zoom-in">
+            <h3>Basic</h3>
+            <h4>Rs 4,999<span>per month</span></h4>
+            <div class="col-lg-8 col-md-10 mx-auto">
+            <ul>
+              <li>- Instagram Handeling</li>
+              <li>- Insta Posts and Stories Ads</li>
+              <li>- Upto 10,000 to 15,000 Views to Targeted Audience</li>
+              <li class="na"> <span>- Coupons Distribution System</span></li>
+              <li class="na"> <span>- Facebook Ads</span></li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="col-lg-4 box featured" data-aos="zoom-in">
+            <span class="featured-badge">Featured</span>
+            <h3>Standard</h3>
+            <h4>Rs 7,999<span>per month</span></h4>
+            <div class="col-lg-8 col-md-10 mx-auto">
+            <ul>
+              <li>- Instagram Handeling</li>
+              <li>- Facebook Handeling</li>
+              <li>- Insta Posts and Stories Ads</li>
+              <li>- Facebook Posts and Stories Ads</li>
+              <li>- Upto 30,000 to 45,000 Views to Targeted Audience</li>
+              <li>- Coupons Distribution System </li>
+              <li>- Website Without Domain</li> 
+            </ul>
+          </div>
+        </div>
+          
+
+          <div class="col-lg-4 box" data-aos="zoom-in">
+            <h3>Premium</h3>
+            <h4>Rs 11,999<span>per month</span></h4>
+            <div class="col-lg-8 col-md-10 mx-auto">
+            <ul>
+              <li>- Instagram Handeling</li>
+              <li>- Facebook Handeling</li>
+              <li>- Insta Posts and Stories Ads</li>
+              <li>- Facebook Posts and Stories Ads</li>
+              <li>- Upto 50,000 to 60,000 Views to Targeted Audience</li>
+              <li>- Coupons Distribution System </li>
+              <li>- Website With Domain</li>
+              <li>- Google My Business</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <br>
+    <hr>
+    <br>
+
+<section>
+   <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+
+     <!-- Todo: Fetch it using for loop from the database -->
+
+     {% for post in posts %}    
+          <div class="post-preview">
+            <a href="/post/{{post.slug}}">
+              <h2 class="post-title">{{ post.title }}
+
+              </h2>
+              <h3 class="post-subtitle">
+                {{post.tagline}}
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="#">Influverts</a>
+              on {{post.date}}</p>
+          </div>
+          <div class="col-lg-8 col-md-10 mx-auto">
+          {{post.content[0:143]}}...
+          </div>
+          <hr>
+</li></a>
+          {% endfor %}
+
+
+          
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+ <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h3>Contact Us</h3>
+          <p>Thank you for your interest in our social media marketing services. We would love to hear from you and answer any questions you may have. Please feel free to contact us using the information below or fill out the form at right side of your page.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>influverts@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box mt-4" data-aos="fade-up" data-aos-delay="100">
+                  <i class="bx bx-phone-call"></i>
+                  <h3>Call Us</h3>
+                  <p>+91 9359987289<br>+91 9860459990</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0">
+            <form name="sentMessage" id="contactForm" action = "/" method="post" novalidate class="php-email-form w-100">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone Number" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+<br>
+
+    <!-- Footer -->
+ <footer class="footer">
+      
+
+            <!-- Social media icons -->
+            <h5>Our Social Networks</h5>
+            <hr>
+            <a href="{{params['in_url']}}" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="{{params['tw_url']}}" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="{{params['ld_url']}}" target="_blank"><i class="fa fa-linkedin"></i></a>
+        
+            <p class="copyright text-muted">Copyright © Influverts 2023</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
+
+  </body>
+
+</html>
+
+
+
